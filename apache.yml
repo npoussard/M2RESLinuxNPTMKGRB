@@ -1,11 +1,11 @@
 ---
-- hosts: web 
+- hosts: srv-web 
   vars_files:
           - vars/main.yml
   pre_tasks:
-          - name: création de documentroot
+          - name: création de documentclient
             file: 
-             path: "{{ item.documentroot }}" 
+             path: "{{ item.documentclient }}" 
              state: directory
             with_items: "{{ apache_vhosts }}"
   roles:
