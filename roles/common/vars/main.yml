@@ -5,6 +5,9 @@ packages:
         - git
         - ntpdate
 
+user_group:
+        - groupname: clientitescia
+
 users:
         - username: client1
           password: itescia

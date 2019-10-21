@@ -1,4 +1,10 @@
 ---
+- name: Création d'un groupe
+  group:
+          name: "{{ item.groupname }}"
+          state: present
+  loop: "{{ user_group }}"
+
 - name: Création d'un utilisateur
   user:
           name: "{{ item.username }}"

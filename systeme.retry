@@ -1,0 +1,5 @@
+srv-bck
+srv-db_master
+srv-db_slave
+srv-web01
+srv-web02
