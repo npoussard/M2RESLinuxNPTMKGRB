@@ -51,3 +51,4 @@ apache_vhosts:
         - { servername: "client1.com", documentclient: "/var/www/vhosts/client1" }
         - { servername: "client2.com", documentclient: "/var/www/vhosts/client2" }
         - { servername: "client3.com", documentclient: "/var/www/vhosts/client3" }
+
