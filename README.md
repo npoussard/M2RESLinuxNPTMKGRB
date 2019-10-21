@@ -86,7 +86,8 @@ Copier les clés ssh
 
 ## MySQL
 Déploiement des bases clients
-  Crétion d'utilisateurs MySQL
+  
+Création d'utilisateurs MySQL
   
 ## Backup
 Sur le fichier bckmysql.yaml création d'un serveur de backup avec une sauvegarde toute les 30 minutes
