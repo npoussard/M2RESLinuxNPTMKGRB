@@ -8,6 +8,6 @@
   cron:
     name: dump database {{item.name}} 
     minute: 30
-    user: {{ mysql_users.name }}
+    user: {{ item.name }}
     job: "/usr/bin/mysqldump --database {{ item.name }}/_db > {{ mysql_backup_dir }}/$(date)"
   with_items: {{ mysql_users }}
