@@ -1,4 +1,4 @@
-# Ansible - Automatisation d'opérations par de serveurs dans une infrastructure
+# Ansible - Automatisation d'opérations pour des serveurs dans une infrastructure
 
 C'ets un logiciel open source qui automatise le provisionnement, la gestion de configuration et le déploiement d'application et de services.
 Plusieurs modules sont séparés par les fonctions des opérations.
