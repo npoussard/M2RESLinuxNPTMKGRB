@@ -79,3 +79,15 @@ Ajout de l'adresse IP du serveur ciblé Apache dans le fichier hosts du System32
 
 Tester l'adresse IP et le numéro de port sur un navigateur web (IE)
 (http://adresse IP du serveur:80)
+
+# Sur les serveurs
+Création d'utilisateurs et groupes 
+Copier les clés ssh
+
+# MySQL
+Déploiement des bases clients
+  Crétion d'utilisateurs MySQL
+  
+# Backup
+Création d'un serveur de backup avec une sauvegarde toute les 30 minutes
+   sur le fichier bckmysql.yaml
