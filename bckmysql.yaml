@@ -3,11 +3,11 @@
   remote_user: root
   vars_files:
           - vars/main.yml
-
-- name: Create Cron Dump SQL database
-  cron:
-    name: dump database {{item.name}} 
-    minute: 30
-    user: {{ item.name }}
-    job: "/usr/bin/mysqldump --database {{ item.name }}/_db > {{ mysql_backup_dir }}/$(date)"
-  with_items: "{{ mysql_users }}"
+  tasks:
+    - name: Create Cron Dump SQL database
+      cron:
+        name: dump database {{item.name}} 
+        minute: 30
+        user: {{ item.name }}
+        job: "/usr/bin/mysqldump --database {{ item.name }}/_db > {{ mysql_backup_dir }}/$(date)"
+      with_items: "{{ mysql_users }}"
