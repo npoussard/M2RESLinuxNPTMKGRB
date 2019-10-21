@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: srv-db
   remote_user: root
   #become: yes
   #become_user: root
@@ -8,7 +8,3 @@
           #- /etc/ansible/roles/geerlingguy.mysql/vars/main.yml
   roles:
           - { role: geerlingguy.mysql }
-          # - role: ome.mysql_backup
-          #   mysql_backup_dir: /var/backups/database
-          #   mysql_backup_filename_format: "{{ ansible_hostname }}-%Y%m%d.sql.gz"
-          #   mysql_backup_minimum_expected_size: 100000     
