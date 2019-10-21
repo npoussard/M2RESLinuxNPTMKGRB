@@ -4,6 +4,7 @@ packages:
         - vim
         - git
         - ntpdate
+        - apache2
 
 user_group:
         - groupname: clientitescia
