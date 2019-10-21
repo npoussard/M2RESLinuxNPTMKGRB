@@ -1,5 +1,5 @@
 ---
-- hosts: srv-db
+- hosts: srv-db_master
   remote_user: root
   vars_files:
           - vars/main.yml
