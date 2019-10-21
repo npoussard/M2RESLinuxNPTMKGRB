@@ -7,11 +7,7 @@
           - vars/main.yml
           #- /etc/ansible/roles/geerlingguy.mysql/vars/main.yml
   roles:
-<<<<<<< HEAD
-          - { role: geerlingguy.mysql }
-=======
           - role: geerlingguy.mysql
->>>>>>> bb4db4374406765536c81a86190009c2681a81f4
           # - role: ome.mysql_backup
             # mysql_backup_dir: /var/backups/database
             # mysql_backup_filename_format: "{{ ansible_hostname }}-%Y%m%d.sql.gz"
