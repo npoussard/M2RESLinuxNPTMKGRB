@@ -13,6 +13,7 @@
 #          uid: 1001
 #          createhome: yes
 #          home: /home/itesciadmin
+
 - name: Création d'un utilisateur
   user:
           name: "{{ item.username }}"

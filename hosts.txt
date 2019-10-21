@@ -1,8 +1,10 @@
 [srv-web]
-192.168.195.132
-192.168.195.129
+srv-web01
+srv-web02
+
 [srv-db]
-192.168.195.131
-192.168.195.128
+srv-db_master
+srv-db_slave
+
 [srv-bck]
-192.168.195.133
+srv-bck
