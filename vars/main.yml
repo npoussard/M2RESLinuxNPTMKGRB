@@ -1,5 +1,6 @@
 ---
 #MySQL
+#DB Ansible
 mysql_root_password: root
 mysql_databases:
         - name: ansible_db
@@ -10,6 +11,43 @@ mysql_users:
           host: "%"
           password: root
           priv: "ansible_db.*:ALL"
+          
+#DB client1
+mysql_root_password: root
+mysql_databases:
+        - name: client1_db
+          encoding: latin1
+          collation: latin1_general_ci
+mysql_users:
+        - name: client1
+          host: "%"
+          password: itescia
+          priv: "client1_db.*:ALL"
+          
+#DB client2
+mysql_root_password: root
+mysql_databases:
+        - name: client2_db
+          encoding: latin1
+          collation: latin1_general_ci
+mysql_users:
+        - name: client2
+          host: "%"
+          password: itescia
+          priv: "client2_db.*:ALL"
+
+#DB client3
+mysql_root_password: root
+mysql_databases:
+        - name: client3_db
+          encoding: latin1
+          collation: latin1_general_ci
+mysql_users:
+        - name: client3
+          host: "%"
+          password: itescia
+          priv: "client3_db.*:ALL"
+          
 
 #Apache
 apache_listen_port: 80
