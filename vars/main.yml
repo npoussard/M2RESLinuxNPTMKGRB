@@ -3,56 +3,46 @@
 #DB Ansible
 mysql_root_password: root
 mysql_databases:
+#Déploiement DB Ansible Test
         - name: ansible_db
           encoding: latin1
           collation: latin1_general_ci
+#Déploiement DB Client1
+        - name: client1_db
+          encoding: latin1
+          collation: latin1_general_ci
+#Déploiement DB Client2        
+        - name: client2_db
+          encoding: latin1
+          collation: latin1_general_ci
+#Déploiement DB Client3          
+        - name: client3_db
+          encoding: latin1
+          collation: latin1_general_ci
+
 mysql_users:
+#Déploiement User itesciadmin
         - name: itesciadmin
           host: "%"
           password: root
           priv: "ansible_db.*:ALL"
-          
-#DB client1
-mysql_root_password: root
-mysql_databases:
-        - name: client1_db
-          encoding: latin1
-          collation: latin1_general_ci
-mysql_users:
+#Déploiement User client1          
         - name: client1
           host: "%"
           password: itescia
           priv: "client1_db.*:ALL"
-          
-#DB client2
-mysql_root_password: root
-mysql_databases:
-        - name: client2_db
-          encoding: latin1
-          collation: latin1_general_ci
-mysql_users:
+#Déploiement User client2
         - name: client2
           host: "%"
           password: itescia
           priv: "client2_db.*:ALL"
-
-#DB client3
-mysql_root_password: root
-mysql_databases:
-        - name: client3_db
-          encoding: latin1
-          collation: latin1_general_ci
-mysql_users:
+#Déploiement User client3
         - name: client3
           host: "%"
           password: itescia
           priv: "client3_db.*:ALL"
 
-#backup Mysql
 mysql_backup_dir: /var/backups/database
-# mysql_backup_filename_format: "{{ ansible_hostname }}-%Y%m%d.sql.gz"
-# mysql_backup_minimum_expected_size: 100000     
-
 
 #Apache
 apache_listen_port: 80

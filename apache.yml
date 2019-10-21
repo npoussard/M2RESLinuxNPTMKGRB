@@ -3,7 +3,7 @@
   vars_files:
           - vars/main.yml
   pre_tasks:
-          - name: création de documentclient
+          - name: création de document client web
             file: 
              path: "{{ item.documentclient }}" 
              state: directory
