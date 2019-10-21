@@ -89,5 +89,5 @@ Déploiement des bases clients
   Crétion d'utilisateurs MySQL
   
 ## Backup
-Création d'un serveur de backup avec une sauvegarde toute les 30 minutes
-   sur le fichier bckmysql.yaml
+Sur le fichier bckmysql.yaml création d'un serveur de backup avec une sauvegarde toute les 30 minutes
+   
