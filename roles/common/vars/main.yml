@@ -12,7 +12,7 @@ users:
         - username: client1
           password: itescia
           user_group: sudo, clientitescia
-        - username: client3
+        - username: client2
           password: itescia
           user_group: sudo, clientitescia
         - username: client3
