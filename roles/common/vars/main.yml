@@ -1,6 +1,4 @@
 ---
-#- include: "package.yml"
-#- include: "users.yml"
 packages:
         - htop
         - vim
@@ -8,10 +6,12 @@ packages:
         - ntpdate
 
 users:
-        - username: itesciadmin
-          password: '!'
-        - username: itesciadmin2
-          password: '!'
-
-user_group:
-        - groups: itescia
+        - username: client1
+          password: itescia
+          user_group: sudo, clientitescia
+        - username: client3
+          password: itescia
+          user_group: sudo, clientitescia
+        - username: client3
+          password: itescia
+          user_group: sudo, clientitescia
