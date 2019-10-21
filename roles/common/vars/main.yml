@@ -1,0 +1,17 @@
+---
+#- include: "package.yml"
+#- include: "users.yml"
+packages:
+        - htop
+        - vim
+        - git
+        - ntpdate
+
+users:
+        - username: itesciadmin
+          password: '!'
+        - username: itesciadmin2
+          password: '!'
+
+user_group:
+        - groups: itescia
