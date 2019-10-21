@@ -47,7 +47,12 @@ mysql_users:
           host: "%"
           password: itescia
           priv: "client3_db.*:ALL"
-          
+
+#backup Mysql
+mysql_backup_dir: /var/backups/database
+# mysql_backup_filename_format: "{{ ansible_hostname }}-%Y%m%d.sql.gz"
+# mysql_backup_minimum_expected_size: 100000     
+
 
 #Apache
 apache_listen_port: 80
