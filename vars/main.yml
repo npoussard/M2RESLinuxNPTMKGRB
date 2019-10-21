@@ -41,7 +41,10 @@ mysql_users:
           host: "%"
           password: itescia
           priv: "client3_db.*:ALL"
-          
+
+#Backup Directory (Dump SQL)       
+mysql_backup_dir: /var/backups/database     
+   
 #Apache
 apache_listen_port: 80
 apache_vhosts:
