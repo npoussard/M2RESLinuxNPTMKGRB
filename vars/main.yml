@@ -52,4 +52,4 @@ mysql_users:
 #Apache
 apache_listen_port: 80
 apache_vhosts:
-        - { servername: "web.local", documentroot: "/var/www/vhosts/web_local" }
+        - { servername: "srv-web01.local", documentclient: "/var/www/vhosts/srv-web01_local" }
