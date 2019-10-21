@@ -1,7 +1,10 @@
-#[all]
-#database
-#web
-[database]
-192.168.237.134
-[web]
-192.168.237.133
+[srv-web]
+srv-web01
+srv-web02
+
+[srv-db]
+srv-db_master
+srv-db_slave
+
+[srv-bck]
+srv-bck
